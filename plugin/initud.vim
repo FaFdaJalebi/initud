@@ -1,2 +1,2 @@
 lua require('initud').initud()
-call Initud()
+call initud()
