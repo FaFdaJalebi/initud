@@ -1,1 +1,1 @@
-command! Initud lua require'initud'.initud()
+command! -complete=command Initud lua require'initud'.initud()
