@@ -1,4 +1,4 @@
-command! Initud lua require'initud'.initud()
+lua require'initud'.initud()
 augroup initud
-  autocmd VimEnter    * nested call Initud()
+  autocmd VimEnter    * nested call initud() 
 augroup END
