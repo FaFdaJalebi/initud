@@ -1,4 +1,2 @@
-let Initud = luaeval('require("initud").initud')
-augroup initud
-  autocmd VimEnter    * nested call Initud() 
-augroup END
+let Initud = luaeval('require("initud").initud()')
+call Initud()
