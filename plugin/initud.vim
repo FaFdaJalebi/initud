@@ -1,4 +1,4 @@
-lua require'initud'.initud()
+let Initud = luaeval('require("initud").initud()')
 augroup initud
-  autocmd VimEnter    * nested call initud() 
+  autocmd VimEnter    * nested call Initud() 
 augroup END
