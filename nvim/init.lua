@@ -29,7 +29,9 @@ paq{'edluffy/specs.nvim'}
 paq{'simeji/winresizer'}
 paq{'yamatsum/nvim-cursorline'}
 paq{'nacro90/numb.nvim'}
---paq{'CorruptedVor/initud'}
+paq{'CorruptedVor/initud'}
+--success
+
 local function map(mode, lhs, rhs, opts)
 	local options = { noremap = true, silent = true }
 	if opts then
