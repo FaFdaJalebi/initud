@@ -1,2 +1,2 @@
-let Initud = luaeval('require("initud").initud()')
+lua require('initud').initud()
 call Initud()
