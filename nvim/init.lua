@@ -30,7 +30,6 @@ paq{'simeji/winresizer'}
 paq{'yamatsum/nvim-cursorline'}
 paq{'nacro90/numb.nvim'}
 paq{'CorruptedVor/initud'}
---success
 
 local function map(mode, lhs, rhs, opts)
 	local options = { noremap = true, silent = true }
@@ -76,7 +75,8 @@ map("","<leader>7", ":7tabnext<CR>", nr)
 map("","<leader>8", ":8tabnext<CR>", nr)
 map("","<leader>9", ":9tabnext<CR>", nr)
 
--- Use ctrl-[hjkl] to select the active split!
+-- Use ctrl-[jkil] to select the active split!
+map("", "<c-s>", ":vsp<CR>", sil)
 map("", "<c-j>", ":wincmd h<CR>", sil)
 map("", "<c-k>", ":wincmd j<CR>", sil)
 map("", "<c-i>", ":wincmd k<CR>", sil)
@@ -91,6 +91,7 @@ vim.cmd("filetype plugin indent on")
 vim.cmd("highlight Comment gui=bold")
 vim.cmd("highlight Normal gui=none")
 vim.cmd("highlight NonText guibg=none")
+vim.cmd("let g:winresizer_start_key = '<C-T>'")
 -- vim-vsnip
 -- NOTE: You can use other key to expand snippet.
 -- Expand
@@ -149,7 +150,6 @@ vim.g.encoding				= "UTF-8"
 vim.g.colors_name			= "moonfly"
 vim.g.moonflyCursorColor		= 1
 vim.g.moonflyUnderlineMatchParen	= 1
-vim.g.winresizer_start_key		= '<C-R>'	-- resize
 
 require('specs').setup{ 
     show_jumps  = true,
