@@ -124,7 +124,7 @@ vim.cmd("nmap <leader>w <Plug>vem_delete_buffer-")
 vim.cmd("let g:spaceline_seperate_style = 'slant-cons'")
 -- deoplete (clang)
 vim.cmd("let g:deoplete#enable_at_startup = 1")
-vim.cmd("call deoplete#custom#option('sources', {'_': ['ale']}) ")
+vim.cmd("call deoplete#custom#option('sources', { '_': [],})")
 vim.cmd("inoremap <silent><expr> <Tab> pumvisible() ? '<C-n>' : '<TAB>'")
 vim.cmd("inoremap <silent><expr> <S-Tab> pumvisible() ? '<C-p>' : '<S-TAB>'")
 -- Acceptable because it seems to have no impact on "startup time"
