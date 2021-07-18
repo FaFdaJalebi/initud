@@ -8,6 +8,7 @@ paq{'roxma/nvim-yarp'}
 paq{'roxma/vim-hug-neovim-rpc'}
 paq{'Shougo/deoplete.nvim'}
 paq{'Shougo/deoplete-clangx'}
+paq{'deoplete-plugins/deoplete-jedi'}
 paq{'Shougo/neoinclude.vim'}
 paq{'dense-analysis/ale'}
 paq{'preservim/nerdtree'}
